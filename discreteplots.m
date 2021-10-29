@@ -1,0 +1,11 @@
+clc;
+close all;
+clear all;
+a= input('enter amplitude value');
+n= input('enter number of samples');
+X = linspace(0,8*pi,n)';
+Y = a*sin(X);
+stem(X,Y);
+xlabel('time');
+ylabel('amplitude');
+title('discrete plot');
